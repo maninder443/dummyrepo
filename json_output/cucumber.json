@@ -1,0 +1,83 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-06-08T15:21:48.599Z",
+        "line": 2,
+        "name": "Validate Davita Patient Home Page Test",
+        "description": "",
+        "id": "davita-application-feature;validate-davita-patient-home-page-test",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10473000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user opens browser",
+            "match": {
+              "location": "stepDefinitions.PatientStepDef.user_opens_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user in on login page",
+            "match": {
+              "location": "stepDefinitions.PatientStepDef.user_in_on_login_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.click(Unknown Source)\r\n\tat pageObjects.LoginPageObj.loginPatient(LoginPageObj.java:62)\r\n\tat stepDefinitions.PatientStepDef.user_logs_into_app(PatientStepDef.java:33)\r\n\tat ✽.user logs into app(file:///C:/Users/naushad.alam/eclipse-workspace/DaVitaCucumberFramework/src/test/resources/functionalTests/Patient.feature:6)\r\n",
+              "duration": 1000000,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "user logs into app",
+            "match": {
+              "location": "stepDefinitions.PatientStepDef.user_logs_into_app()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "Patient home page is displayed",
+            "match": {
+              "location": "stepDefinitions.PatientStepDef.patient_home_page_is_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "validate patient home page title",
+            "match": {
+              "location": "stepDefinitions.PatientStepDef.validate_patient_home_page_title()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "DaVita Application Feature",
+    "description": "",
+    "id": "davita-application-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/functionalTests/Patient.feature",
+    "tags": []
+  }
+]
